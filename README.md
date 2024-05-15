@@ -38,16 +38,14 @@ csharp
 What is the total sales by region?
 View the generated SQL query and output. For the example question above, the output might be:
 
-sql
-Copy code
-SELECT region, SUM(sales) AS total_sales FROM table GROUP BY region;
-diff
-Copy code
-+------------+-------------+
-|   region   | total_sales |
-+------------+-------------+
-|  Region1   |   10000     |
-|  Region2   |   15000     |
-|  Region3   |   12000     |
-+------------+-------------+
+   ```
+   SELECT region, SUM(sales) AS total_sales FROM table GROUP BY region;
+   diff
+      +------------+-------------+
+      |   region   | total_sales |
+      +------------+-------------+
+      |  Region1   |   10000     |
+      |  Region2   |   15000     |
+      |  Region3   |   12000     |
+      +------------+-------------+
 The AI SQL engineer will execute the SQL query on the .csv file and display the results.

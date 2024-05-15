@@ -34,13 +34,17 @@ Mistral and Gemma Link :- https://huggingface.co/gaurav16/SQL-Models/tree/main
    python main.py
 Input your natural language question. For example:
 
-csharp
-What is the total sales by region?
+   ```Question
+   What is the total sales by region?
+
 View the generated SQL query and output. For the example question above, the output might be:
 
-   ```
+
+   
    SELECT region, SUM(sales) AS total_sales FROM table GROUP BY region;
    diff
+
+
       +------------+-------------+
       |   region   | total_sales |
       +------------+-------------+
